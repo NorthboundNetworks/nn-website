@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Northbound Networks - Building the future of networking">
-    <title>Northbound Networks</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Looping Video (Full Fit)</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+    video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+      width: 100%;
+      object-fit: contain; /* show entire frame without cropping */
+      background-color: black;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1 class="logo">Northbound Networks</h1>
-        </header>
-        
-        <main>
-            <section class="hero">
-                <h2 class="tagline">Building the Future of Networking</h2>
-                <p class="subtitle">We're working on something exciting. Stay tuned.</p>
-            </section>
-            
-            <section class="interest-form">
-                <h3>Get Early Access</h3>
-                <form id="interestForm">
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                    <button type="submit">Notify Me</button>
-                </form>
-                <p class="form-message" id="formMessage"></p>
-            </section>
-        </main>
-        
-        <footer>
-            <p>&copy; 2025 Northbound Networks. All rights reserved.</p>
-        </footer>
-    </div>
-    
-    <script src="script.js"></script>
+  <video autoplay muted loop playsinline>
+    <source src="movie.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </body>
 </html>
